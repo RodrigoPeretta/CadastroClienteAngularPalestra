@@ -1,0 +1,20 @@
+<div class="content">
+    <mat-card>
+        <mat-list>
+            <mat-list-item *ngFor="let cliente of clientes">
+                <a (click)="selecionarCliente(cliente)">
+                    {{cliente.nome}}
+                </a>
+            </mat-list-item>
+        </mat-list>
+    </mat-card>
+    
+    <mat-card>
+        <app-detalhes 
+        [cliente]="clienteSelecionado"
+        (delete)="deletarCliente($event)">
+            Detalhes do Cliente
+        </app-detalhes>
+    </mat-card>
+
+</div>

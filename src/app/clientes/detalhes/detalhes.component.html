@@ -1,0 +1,15 @@
+<ng-content></ng-content>
+
+<div *ngIf="cliente != null">
+    <p>
+        <span>ID: {{cliente?.id}}</span>
+        <br>
+        <span>Nome: {{cliente?.nome}}</span>
+        <br>
+        <span>Email: {{cliente?.email}}</span>
+    </p>
+    
+    <button mat-raised-button (click)="deletar()">Deletar</button>
+
+
+</div>

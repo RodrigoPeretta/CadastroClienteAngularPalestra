@@ -1,0 +1,7 @@
+.content {
+    display: flex;
+}
+
+mat-card {
+    margin: 20px;
+}
